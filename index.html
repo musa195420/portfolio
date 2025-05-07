@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My PortFolio Websites - Easy Tutorials</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="header">
+      <div class="container">
+        <nav>
+          <img src="images/logo.png" alt="Logo Image" class="Logo" />
+          <ul>
+            <li>
+              <a href="#">Home</a>
+            </li>
+            <li>
+              <a href="#">About</a>
+            </li>
+            <li>
+              <a href="#">Services</a>
+            </li>
+            <li>
+              <a href="#">Contact</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="header-text">
+            <p>
+               Mobile App Developer 
+            </p>
+            <h1>
+                Hello! I'm <span>Muhammad Musa</span> <br>Dedicated Mobile App Developer  
+            </h1>
+            
+        </div>
+      </div>
+    </div>
+<!-- --------------------------------------------------------------About Us------------------------------------ -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                  <img src="images/user.png" alt="UserImage" class="AboutImage">
+                </div>
+                <div class="about-col-2">
+                
+                       <h1 class="sub-title"> About Me</h1>
+                       <p>
+                        I specialize in Android Native Development (Java) and Cross-Platform Development with Flutter and Flutter Flow. With over a year of experience in app development, I’ve honed my skills to transform complex ideas into high-performing, visually stunning applications that make a real impact.
+                    
+                      <br> <br>
+                      <h3>What I Bring to the Table?</h3>
+                      <ul>
+                        <br>🌟 A commitment to writing clean, maintainable, and testable code that’s optimized for both performance and scalability.
+                        <br>🌟 A belief that "You cannot learn unless the client’s problem becomes your problem."
+                      </ul>
+                      <br> <br>
+                     
+                    </p>
+                   <div class="tab-title">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                   </div>
+                   <div class="tab-contents active-tab" id="skills">
+                   <ul>
+                    <li>
+                       
+                          <strong>  What I Bring to the Table?</strong><br><br>
+                            <br> <span>⚝</span> Payment Gateways (Secure and seamless integration)
+                            <br><span>⚝</span> TensorFlow Lite for embedding AI and ML models
+                            <br><span>⚝</span> Animations with tools like Rive
+                            <br><span>⚝</span> Third-Party Integrations (Gateways, libraries, and APIs)
+                            <br><span>⚝</span> State Management with Provider, GetIt, Bloc, and Riverpod
+                            <br><span>⚝</span> Google Maps Integration for geolocation services
+                            <br><span>⚝</span> Crash Analytics for monitoring and improving stability
+                            <br><span>⚝</span> Embedded Systems for hardware-software synergy
+                            <br><span>⚝</span> REST API Integration for robust backend communication
+                            <br><span>⚝</span> Enhanced UI/UX Design with a focus on user delight
+                            <br><span>⚝</span> App Performance Optimization for smooth functionality
+                            <br> <br>
+                            Methodologies & Design Patterns:
+                            <br>✅ Proficient in MVVM and MVC architectures
+                            <br>✅ Skilled in Dependency Injection for cleaner codebases <br>
+                       
+                    </li>
+                   </ul>
+                   </div>
+
+                   <div class="tab-contents" id='experience'>
+                    <ul>
+                     <li>
+                        
+                        <strong>What Am I Capable Of?</strong><br><br>
+                             <br> <span>⚝</span>  1+ year of experience in Cross-Platform App Development
+                             <br><span>⚝</span>  3 months of expertise in Android Native Development Tech Swivel
+                             <br><span>⚝</span> 2 months training in Android Native Java In PNY Traning Center 
+                             <br><span>⚝</span> 2 months training of Express + Node JS
+                     </li>
+                    </ul>
+                    </div>
+
+
+                    <div class="tab-contents"id='education'>
+                        <ul>
+                          <li>
+                            <strong>What I Have Studied?</strong><br><br>
+                            <span>⚝</span> Government College University (GCU), Lahore  — 2021–2025<br>
+                            <span>⚝</span> Punjab Group of Colleges, ICS — 2019–2021<br>
+                            <span>⚝</span> PNY Training Center — 2022–2023
+                          </li>
+                        </ul>
+                      </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!---------------------------------------------------------------------Services----------------------------------------------->
+
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                
+            </div>
+        </div>
+    </div>
+    <script>
+        var tablinks=document.getElementsByClassName("tab-links");
+        var tabContents=document.getElementsByClassName("tab-contents");
+       function opentab(tabName)
+       {
+        for(tablink of tablinks)
+       {
+        tablink.classList.remove("active-link");
+       }
+
+       for(tabContent of tabContents)
+       {
+        tabContent.classList.remove("active-tab");
+       }
+       event.currentTarget.classList.add("active-link");
+       document.getElementById(tabName).classList.add("active-tab");
+
+       }
+    </script>
+  </body>
+</html>
