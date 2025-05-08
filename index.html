@@ -12,27 +12,22 @@
       <div class="container">
         <nav>
           <img src="images/logo.png" alt="Logo Image" class="Logo" />
-          <ul>
-            <li>
-              <a href="#">Home</a>
-            </li>
-            <li>
-              <a href="#">About</a>
-            </li>
-            <li>
-              <a href="#">Services</a>
-            </li>
-            <li>
-              <a href="#">Contact</a>
-            </li>
+          <ul id="side-menu">
+            <i class="fa-solid fa-square-xmark" onclick="closemenu()"></i>
+            <li><a href="#header">Home</a> </li>
+            <li> <a href="#about">About</a> </li>
+            <li><a href="#services">Services</a> </li>
+            <li><a href="#contact">Contact</a> </li>
+           
           </ul>
+          <i class="fa-solid fa-bars" onclick="openmenu()"></i>
         </nav>
         <div class="header-text">
             <p>
                Mobile App Developer 
             </p>
             <h1>
-                Hello! I'm <span>Muhammad Musa</span> <br>Dedicated Mobile App Developer  
+                Hello! I'm <span>Muhammad Musa</span> <br> Mobile App Developer  
             </h1>
             
         </div>
@@ -96,9 +91,9 @@
                         
                         <strong>What Am I Capable Of?</strong><br>
                              <br> <span><i class="fa-brands fa-flutter"></i></span>1+ year of experience in Cross-Platform App Development
-                             <br><span><i class="fa-brands fa-android"></i></span>3 months of expertise in Android Native Development Tech Swivel
-                             <br><span><i class="fa-brands fa-java"></i></span>2 months training in Android Native Java In PNY Traning Center 
-                             <br><span><i class="fa-brands fa-node"></i></span>2 months training of Express + Node JS
+                             <br> <br><span><i class="fa-brands fa-android"></i></span>3 months of expertise in Android Native Development Tech Swivel
+                             <br> <br><span><i class="fa-brands fa-java"></i></span>2 months training in Android Native Java In PNY Traning Center 
+                             <br> <br><span><i class="fa-brands fa-node"></i></span>2 months training of Express + Node JS
                      </li>
                     </ul>
                     </div>
@@ -108,14 +103,15 @@
                         <ul>
                           <li>
                             <strong>What I Have Studied?</strong><br><br>
-                            <br><span><i class="fa-solid fa-graduation-cap"></i></span> Government College University (GCU), Lahore  — 2021–2025
-                            <br><span><i class="fa-solid fa-school"></i></span> Punjab Group of Colleges, ICS — 2019–2021
-                            <br> <span><i class="fa-solid fa-laptop-code"></i></span> PNY Training Center — 2022–2023
+                            <br> <br><span><i class="fa-solid fa-graduation-cap"></i></span> Government College University (GCU), Lahore  — 2021–2025
+                            <br><br><span><i class="fa-solid fa-school"></i></span> Punjab Group of Colleges, ICS — 2019–2021
+                            <br><br> <span><i class="fa-solid fa-laptop-code"></i></span> PNY Training Center — 2022–2023
                           </li>
                         </ul>
                       </div>
                 </div>
             </div>
+           
         </div>
     </div>
 
@@ -162,6 +158,96 @@
             </div>
         </div>
     </div>
+
+    <!-- -------------------------------------------------------Portfolio-------------------------------------------- -->
+     
+    <div class="portfolio">
+      <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+          <div class="work"> <img src="images/work1.gif" alt="">
+          <div class="layer">
+            <h3>
+              FOD App
+            </h3>
+            <p>
+              This restaurant app offers a complete solution for both admins and users. Admins can manage food items, orders, and deliveries, while users can browse menus, place orders, and make secure payments through Stripe.
+            </p>
+            <a href="#"> <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </div>
+          </div>
+         
+       
+        <div class="work">
+          <img src="images/work2.gif" alt="Animated Image">
+          <div class="layer">
+            <h3>
+             Pet Adoption App
+            </h3>
+            <p>
+              Pet Adoption App connects adopters with donors to facilitate safe and secure pet handovers. The app uses an ML model to provide pet information, includes health info cards approved by admins, secure chat, meetup scheduling, and user ID verification.
+            </p>
+            <a href="#"> <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </div>
+        </div>
+        <div class="work">
+          <img src="images/work3.gif" alt="">
+          <div class="layer">
+            <h3>
+             Saasy Pos
+            </h3>
+            <p>
+              Saasy POS is a point-of-sale application used in retail stores across the U.S. I worked on it as part of an office team, contributing to the UI using Android native code, handling Android integrations, building responsive pages in collaboration with designers, and working on custom Java libraries to enhance functionality.
+            </p>
+            <a href="#"> <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </div>
+        </div>
+      </div>
+      <a href="#" class="btn">See more</a>
+      </div>
+    </div>
+
+    <!-- -------------contact------------------------ -->
+     <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+           <h1 class="sub-title">
+            Contact Me
+           </h1>
+           <p>
+            <i class="fa-solid fa-paper-plane"></i>
+            musa195420@gmail.com
+           </p>
+           <p>
+            <i class="fa-solid fa-phone"></i>
+            +923218838748
+           </p>
+           <div class="social-icons">
+              <a href="https://github.com/musa195420"><i class="fa-brands fa-github"></i></a>
+              <a href="https://www.linkedin.com/in/muhammad-musa-8ba5b6305/"><i class="fa-brands fa-linkedin-in"></i></a>
+              <a href="https://github.com/MUSA-19542"><i class="fa-brands fa-square-github"></i></a>
+           </div>
+           <a href="images/cv.pdf" download  class="btn btn2">Download Cv</a>
+          </div>
+          <div class="contact-right">
+            <form name="submit-to-google-sheet">
+              <input type="text" name="Name" placeholder="Your Name" required>
+              <input type="email" name="Email" placeholder="Your Email" required>
+
+              <textarea name="Message"rows="6"placeholder="Your Message"></textarea>
+              <button type="Submit" class="btn btn2">Submit</button>
+            </form>
+            <span id="msg">
+              
+            </span>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+       <p> CopyRight © Musa19542 </p>
+      </div>
+     </div>
     <script>
         var tablinks=document.getElementsByClassName("tab-links");
         var tabContents=document.getElementsByClassName("tab-contents");
@@ -181,5 +267,38 @@
 
        }
     </script>
+    <script>
+      var sidemenu = document.getElementById("side-menu");
+      function openmenu(){
+        sidemenu.style.right="0";
+      }
+      function closemenu(){
+        sidemenu.style.right="-200px";
+      }
+    </script>
+
+<script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbyZe6vQYoOHOT9ax20QoRRQ_4yvQV9eFBoORkZVmZLmjYYL-DiUIWe3xl4zbU7PwHe_/exec'
+  const form = document.forms['submit-to-google-sheet']
+
+ const msg=document.getElementById("msg")
+
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response =>{msg.innerHTML="Message Sent Successfully !"
+        setTimeout(function(){
+          msg.innerHTML=""
+        },5000)
+        form.reset()
+      })
+      .catch(error => {msg.innerHTML="Message Not Sent "+error.message
+        setTimeout(function(){
+          msg.innerHTML=""
+        },5000)
+        form.reset()
+      })
+  })
+</script>
   </body>
 </html>
