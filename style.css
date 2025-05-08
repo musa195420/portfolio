@@ -200,7 +200,9 @@ transition: background 0.5s, transform 0.5s;
   font-size: 50px;
   margin-bottom: 30px;
 }
-
+.services-list div p{
+  font-size: 20px;
+}
 
 .services-list div h2{
   font-size: 30px;
