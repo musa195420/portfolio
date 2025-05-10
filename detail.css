@@ -269,7 +269,7 @@ h3 {
 
 @media (max-width: 600px) {
   .video-and-carousel {
-    flex-direction: column; /* Stack carousel and video vertically */
+    flex-direction: column-reverse;/* Stack carousel and video vertically */
   }
 
   .image-carousel {
