@@ -1,0 +1,269 @@
+/* General Styling */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #0d0d0d;
+  color: #ffffff;
+}
+h1,
+h3 {
+  margin: 0 0 1rem 0;
+  font-weight: 600;
+  color: #ffffff;
+}
+h1 {
+  font-size: 2.5rem;
+}
+h3 {
+  font-size: 1.5rem;
+  border-left: 4px solid #e91e63;
+  padding-left: 10px;
+}
+.video-section video {
+  width: 100%;
+  max-width: 640px; /* Set max width for the video */
+  height: auto;
+  margin-bottom: 20px; /* Space between video and carousel */
+}
+
+.container {
+  display: flex;
+  justify-content: center; /* Align horizontally */
+  align-items: center; /* Align vertically */
+  height: 100%;
+}
+
+.right-side {
+  text-align: center; /* Center text inside this div */
+}
+/* Increase the height of the image carousel container */
+.image-carousel {
+  padding-top: 0px; /* Gives breathing space at the top */
+  align-items: flex-start;
+  overflow-x: auto;
+  overflow-y: hidden;
+  white-space: nowrap;
+  scroll-behavior: smooth;
+  cursor: grab;
+  display: flex;
+  align-items: flex-start; /* Align to top instead of center */
+  position: relative;
+  padding-top: 10px; /* Optional: Add top padding */
+}
+
+.image-carousel img {
+  margin-top: 50px;
+  max-height: 80%; /* Ensures image doesn't overflow */
+  width: 100%;
+  object-fit: contain; /* Ensures full image is shown */
+  margin-right: 10px;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
+  transition: transform 0.5s ease, box-shadow 0.5s ease;
+  flex-shrink: 0;
+}
+
+.image-carousel img.active {
+  transform: scale(1.1);
+  border: 5px solid red; /* Adjust the border thickness as needed */
+}
+.image-carousel-inner {
+  display: flex;
+  height: 110%;
+  overflow-x: scroll;
+  scroll-behavior: smooth; /* optional for smooth scrolling */
+  width: 100%;
+  gap: 10px; /* optional, for spacing between images */
+}
+
+/* Ensure the tab bar and other sections are styled */
+.tab-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 1rem;
+  background-color: #1a1a1a;
+  border-bottom: 1px solid #333;
+  flex-wrap: wrap; /* Makes it responsive */
+}
+.tab-links {
+  display: flex;
+  justify-content: center;
+  flex: 1;
+  gap: 1.5rem;
+}
+.tab.active {
+  color: #ff5733;
+}
+
+.detail-container {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px;
+}
+
+.left-side {
+  width: 40%;
+}
+
+.right-side {
+  align-self: center;
+}
+
+.back-button {
+  padding: 8px 16px;
+  background-color: transparent;
+  color: #e91e63;
+  border: 2px solid #e91e63;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-right: 1rem;
+  flex-shrink: 0;
+}
+.back-button:hover {
+  background-color: #e91e63;
+  color: white;
+}
+
+/* Tab Bar Flutter Style */
+.tab-bar {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  padding: 1rem;
+  background-color: #1a1a1a;
+  border-bottom: 1px solid #333;
+}
+.tab {
+  padding: 10px 20px;
+  border-radius: 20px;
+  background-color: #2c2c2c;
+  color: #fff;
+  text-decoration: none;
+  transition: 0.3s;
+  font-weight: 500;
+  border: 2px solid transparent;
+}
+.tab:hover {
+  background-color: #e91e63;
+  color: #fff;
+}
+.tab.active {
+  background-color: #e91e63;
+  border-color: #e91e63;
+  color: #fff;
+}
+
+/* Layout */
+.detail-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 3rem 10%;
+  border-bottom: 1px solid #333;
+}
+.left-side,
+.right-side {
+  width: 48%;
+}
+.left-side ul {
+  list-style: none;
+  padding-left: 0;
+}
+.left-side li {
+  background-color: #1a1a1a;
+  padding: 10px 15px;
+  margin: 10px 0;
+  border-left: 4px solid #e91e63;
+  border-radius: 5px;
+}
+
+/* Video + Carousel */
+.video-section {
+  padding: 2rem 10%;
+}
+.video-section h3 {
+  text-align: center;
+}
+.video-and-carousel {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 20px;
+}
+.video-and-carousel video {
+  height: 600px;
+  border: 2px solid #444;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #222;
+}
+.image-carousel {
+  width: 30%;
+  height: 600px;
+  overflow-x: auto;
+  overflow-y: hidden;
+  white-space: nowrap;
+  scroll-behavior: smooth;
+  cursor: grab;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.image-carousel:active {
+  cursor: grabbing;
+}
+
+.image-carousel img {
+  height: 550px;
+  width: auto;
+  margin-right: 10px;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
+  transition: transform 0.5s ease, box-shadow 0.5s ease;
+  flex-shrink: 0;
+}
+
+.image-carousel img.active {
+  transform: scale(1.1);
+  box-shadow: 0 0 20px rgba(233, 30, 99, 0.6);
+}
+
+/* Horizontal scroll animation */
+@keyframes scrollImagesHorizontal {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+/* Tools Used */
+.tools-used {
+  padding: 2rem 10%;
+  font-size: 1.1rem;
+  border-top: 1px solid #333;
+  color: #ccc;
+}
+.tools-used h3 {
+  color: #ffffff;
+}
+
+/* Back Button */
+.back-button {
+  margin: 2rem 10%;
+  padding: 10px 20px;
+  background-color: transparent;
+  color: #e91e63;
+  border: 2px solid #e91e63;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.back-button:hover {
+  background-color: #e91e63;
+  color: #fff;
+}

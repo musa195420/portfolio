@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Project Detail</title>
+    <link rel="stylesheet" href="detail.css" />
+  </head>
+  <body>
+    <!-- Flutter-style Tab Navigation -->
+    <nav class="tab-bar">
+      <button onclick="history.back()" class="back-button">← Back</button>
+      <div class="tab-links">
+        <a href="index.html" class="tab active">Overview</a>
+        <a href="#" class="tab">Features</a>
+        <a href="#" class="tab">Demo</a>
+        <a href="#" class="tab">Tech Stack</a>
+      </div>
+    </nav>
+    <div class="container">
+    <div class="right-side">
+        <h1>Big Project Name</h1>
+    </div>
+</div>
+    <div class="detail-container">
+      <div class="left-side">
+        <h3>What I Did</h3>
+        <ul></ul>
+      </div>
+    
+    </div>
+
+    <div class="video-section">
+      <h3>Project Demo</h3>
+      <div class="video-and-carousel">
+        <video controls>
+          <source src="" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+        <div class="image-carousel"></div>
+      </div>
+    </div>
+
+    <div class="tools-used">
+      <h3>Tools & Technologies Used</h3>
+      <p></p>
+    </div>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const projects = {
+          "fod-app": {
+            title: "FOD APP",
+            tasks: [
+              "Implemented Bloc Code",
+              "Implemented REST APIs",
+              "Integrated Payment Gateway Stripe",
+              "Implemented Firebase Emai Authentication",
+              "Integrated Supbase Storage Bucket",
+            ],
+            video:
+              "https://drive.google.com/file/d/1Fs3qTT2bUP5iHHDotGQm7AbBLK6f6jrY/preview",
+            tools: "Flutter,Stripe,Firebase,Figma,Junit",
+            images: [
+              "images/fod/1_fod.png",
+              "images/fod/2_fod.png",
+              "images/fod/3_fod.png",
+              "images/fod/4_fod.png",
+              "images/fod/5_fod.png",
+              "images/fod/6_fod.png",
+              "images/fod/7_fod.png",
+              "images/fod/8_fod.png",
+              "images/fod/9_fod.png",
+            ],
+          },
+          "pet-adoption": {
+            title: "Pet Adoption App",
+            tasks: [
+              "Designed UI",
+              "Integrated ML Model",
+              "Implemented Chat & Meetups",
+            ],
+            video: "demo-pet.mp4",
+            tools: "React, Node.js, Express, Supabase, ML Model",
+            images: ["images/1.png", "images/2.png", "images/3.png"],
+          },
+          "saasy-pos": {
+            title: "Saasy POS",
+            tasks: [
+              "Worked on Android UI",
+              "Integrated Java Libraries",
+              "Collaborated with Design Team",
+            ],
+            video: "demo-saasy.mp4",
+            tools: "Android Native, Java, XML",
+            images: ["images/1.png", "images/2.png", "images/3.png"],
+          },
+        };
+
+        const params = new URLSearchParams(window.location.search);
+        const projectKey = params.get("project");
+        const project = projects[projectKey];
+
+        if (project) {
+          const titleEl = document.querySelector(".right-side h1");
+          const taskList = document.querySelector(".left-side ul");
+          const videoSection = document.querySelector(".video-and-carousel");
+          const videoElement = videoSection.querySelector("video");
+          const sourceEl = videoElement.querySelector("source");
+          const toolsEl = document.querySelector(".tools-used p");
+          const carouselEl = document.querySelector(".image-carousel");
+
+          titleEl.textContent = project.title;
+          taskList.innerHTML = "";
+          project.tasks.forEach((task) => {
+            const li = document.createElement("li");
+            li.textContent = task;
+            taskList.appendChild(li);
+          });
+
+          // Video handling: use iframe if Google Drive link, else video tag
+          if (project.video.includes("drive.google.com")) {
+            const iframe = document.createElement("iframe");
+            iframe.src = project.video.replace("/uc?export=download", "/preview");
+            iframe.width = "640";
+            iframe.height = "480";
+            iframe.allow = "autoplay";
+            iframe.allowFullscreen = true;
+            videoElement.remove();
+            videoSection.prepend(iframe);
+          } else {
+            sourceEl.src = project.video;
+            videoElement.load();
+          }
+
+          toolsEl.textContent = project.tools;
+
+          // Image Carousel
+          carouselEl.innerHTML = "";
+          const innerDiv = document.createElement("div");
+          innerDiv.classList.add("image-carousel-inner");
+
+          project.images.forEach((imgPath) => {
+            const img = document.createElement("img");
+            img.src = imgPath;
+            img.alt = project.title + " screenshot";
+            innerDiv.appendChild(img);
+          });
+
+          project.images.forEach((imgPath) => {
+            const img = document.createElement("img");
+            img.src = imgPath;
+            img.alt = project.title + " screenshot";
+            innerDiv.appendChild(img);
+          });
+
+          carouselEl.appendChild(innerDiv);
+
+          let currentIndex = 0;
+          let scrollInterval;
+
+          function startCarousel() {
+            const carousel = document.querySelector(".image-carousel-inner");
+            const images = carousel.querySelectorAll("img");
+
+            if (images.length === 0) return;
+
+            function highlightImage(index) {
+              const images = carousel.querySelectorAll("img");
+              images.forEach((img, i) =>
+                img.classList.toggle("active", i === index)
+              );
+
+              const img = images[index];
+              carousel.scrollTo({
+                left: img.offsetLeft - 20,
+                behavior: "smooth",
+              });
+            }
+
+            scrollInterval = setInterval(() => {
+              currentIndex = (currentIndex + 1) % images.length;
+              highlightImage(currentIndex);
+            }, 2500);
+          }
+
+          function enableDragging() {
+            const carousel = document.querySelector(".image-carousel-inner");
+            let isDown = false,
+              startX,
+              scrollLeft;
+
+            carousel.addEventListener("mousedown", (e) => {
+              isDown = true;
+              carousel.classList.add("active");
+              startX = e.pageX - carousel.offsetLeft;
+              scrollLeft = carousel.scrollLeft;
+            });
+            carousel.addEventListener("mouseleave", () => {
+              isDown = false;
+            });
+            carousel.addEventListener("mouseup", () => {
+              isDown = false;
+            });
+            carousel.addEventListener("mousemove", (e) => {
+              if (!isDown) return;
+              e.preventDefault();
+              const x = e.pageX - carousel.offsetLeft;
+              const walk = (x - startX) * 2;
+              carousel.scrollLeft = scrollLeft - walk;
+            });
+          }
+
+          startCarousel();
+          enableDragging();
+        } else {
+          document.querySelector(".right-side h1").textContent =
+            "Project Not Found";
+        }
+      });
+    </script>
+  </body>
+</html>
