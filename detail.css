@@ -20,12 +20,6 @@ h3 {
   border-left: 4px solid #e91e63;
   padding-left: 10px;
 }
-.video-section video {
-  width: 100%;
-  max-width: 640px; /* Set max width for the video */
-  height: auto;
-  margin-bottom: 20px; /* Space between video and carousel */
-}
 
 .container {
   display: flex;
@@ -181,8 +175,11 @@ h3 {
 }
 
 /* Video + Carousel */
+
+
+
 .video-section {
-  padding: 2rem 10%;
+  padding: 2rem 5%;
 }
 .video-section h3 {
   text-align: center;
@@ -194,10 +191,11 @@ h3 {
   gap: 20px;
 }
 .video-and-carousel video {
-  height: 600px;
   border: 2px solid #444;
   border-radius: 10px;
   box-shadow: 0 0 10px #222;
+  padding-right: 200px;
+  
 }
 .image-carousel {
   width: 30%;
@@ -266,4 +264,48 @@ h3 {
 .back-button:hover {
   background-color: #e91e63;
   color: #fff;
+}
+
+
+@media (max-width: 600px) {
+  .video-and-carousel {
+    flex-direction: column; /* Stack carousel and video vertically */
+  }
+
+  .image-carousel {
+    width: 100%;
+    height: 400px; /* Adjust height to fit on mobile */
+    margin-bottom: 20px; /* Add some space below the carousel */
+  }
+
+  .video-section video {
+    height: auto;
+    max-width: 100%;
+    margin-bottom: 20px; /* Add some space below the video */
+  }
+
+  .right-side {
+    text-align: center;
+    margin-bottom: 20px; /* Add space at the bottom */
+  }
+
+  .container {
+    flex-direction: column; /* Stack content vertically */
+    padding: 20px;
+  }
+
+  .detail-container {
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+  }
+
+  .left-side,
+  .right-side {
+    width: 100%;
+    text-align: center;
+  }
+
+ 
+
 }
