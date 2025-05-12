@@ -361,15 +361,31 @@ h3 {
     text-align: center;
   }
 .tools-used  {
-  width:150%;
+  width:80%;
   padding: 10px;
 }
- .tab-bar {
-  
-  width: 150%;
-  
-}
+ 
+.tab-bar {
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%; /* Prevent overflow */
+  }
 
+  .tab-links {
+    display: flex;
+    flex-wrap: wrap; /* Allow buttons to wrap */
+    gap: 10px; /* Optional spacing between buttons */
+    width: 100%;
+  }
+
+  .tab-links .tab {
+    flex: 1 1 45%; /* Make them responsive */
+    text-align: center;
+  }
+
+  * {
+  box-sizing: border-box;
+}
 .demo_project{
   justify-content: center;
   align-items: center;
