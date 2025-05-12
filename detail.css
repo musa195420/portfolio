@@ -267,7 +267,7 @@ h3 {
 }
 
 
-@media (max-width: 600px) {
+ @media only screen and (max-width:600px){
   .video-and-carousel {
     flex-direction: column-reverse;/* Stack carousel and video vertically */
   }
