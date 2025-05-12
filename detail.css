@@ -2,6 +2,8 @@
 body {
   margin: 0;
   padding: 0;
+  width: 100%;
+  box-sizing: border-box;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   background-color: #0d0d0d;
   color: #ffffff;
@@ -74,13 +76,17 @@ h3 {
 /* Ensure the tab bar and other sections are styled */
 .tab-bar {
   display: flex;
-  align-items: center;
   justify-content: space-between;
-  padding: 1rem 1rem;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+  padding: 1rem;
   background-color: #1a1a1a;
   border-bottom: 1px solid #333;
-  flex-wrap: wrap; /* Makes it responsive */
+  box-sizing: border-box; /* Ensures padding doesn't reduce width */
 }
+
+
 .tab-links {
   display: flex;
   justify-content: center;
@@ -122,15 +128,7 @@ h3 {
   color: white;
 }
 
-/* Tab Bar Flutter Style */
-.tab-bar {
-  display: flex;
-  justify-content: center;
-  gap: 1.5rem;
-  padding: 1rem;
-  background-color: #1a1a1a;
-  border-bottom: 1px solid #333;
-}
+
 .tab {
   padding: 10px 20px;
   border-radius: 20px;
@@ -177,6 +175,10 @@ h3 {
 /* Video + Carousel */
 
 
+.tools-used  {
+  width:90%;
+  padding: 10px;
+}
 .tools-used i {
   color: #e91e63;
    padding: 20px;
@@ -247,12 +249,7 @@ h3 {
   }
 }
 /* Tools Used */
-.tools-used {
-  padding: 2rem 10%;
-  font-size: 1.1rem;
-  border-top: 1px solid #333;
-  color: #ccc;
-}
+
 .tools-used h3 {
   color: #ffffff;
 }
@@ -363,7 +360,19 @@ h3 {
     width: 100%;
     text-align: center;
   }
+.tools-used  {
+  width:150%;
+  padding: 10px;
+}
+ .tab-bar {
+  
+  width: 150%;
+  
+}
 
- 
+.demo_project{
+  justify-content: center;
+  align-items: center;
+}
 
 }
