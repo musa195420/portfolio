@@ -233,6 +233,9 @@ h3 {
   transform: scale(1.1);
   box-shadow: 0 0 20px rgba(233, 30, 99, 0.6);
 }
+.tab-contents i{
+  padding: 10;
+}
 
 /* Horizontal scroll animation */
 @keyframes scrollImagesHorizontal {
@@ -322,7 +325,7 @@ h3 {
 }
 
 
- @media only screen and (max-width:600px){
+ @media only screen and (max-width:700px){
   .video-and-carousel {
     flex-direction: column-reverse;/* Stack carousel and video vertically */
   }
