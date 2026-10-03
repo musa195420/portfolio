@@ -1,0 +1,405 @@
+{
+  "bucket": "portfolio-assets",
+  "base_url": "https://rmnzqinspzgmvgxistyi.supabase.co/storage/v1/object/public/portfolio-assets",
+  "total_files": 46,
+  "assets": {
+    "decorations": {
+      "about-passionate-note.png": "https://rmnzqinspzgmvgxistyi.supabase.co/storage/v1/object/public/portfolio-assets/decorations/about-passionate-note.png",
+      "hero-build-card.png": "https://rmnzqinspzgmvgxistyi.supabase.co/storage/v1/object/public/portfolio-assets/decorations/hero-build-card.png",
+      "hero-note-clean-code.png": "https://rmnzqinspzgmvgxistyi.supabase.co/storage/v1/object/public/portfolio-assets/decorations/hero-note-clean-code.png",
+      "hero-note-ideas.png": "https://rmnzqinspzgmvgxistyi.supabase.co/storage/v1/object/public/portfolio-assets/decorations/hero-note-ideas.png"
+    },
+    "icons": {
+      "ai-ml.png": "https://rmnzqinspzgmvgxistyi.supabase.co/storage/v1/object/public/portfolio-assets/icons/ai-ml.png",
+      "android.png": "https://rmnzqinspzgmvgxistyi.supabase.co/storage/v1/object/public/portfolio-assets/icons/android.png",
+      "app-store.png": "https://rmnzqinspzgmvgxistyi.supabase.co/storage/v1/object/public/portfolio-assets/icons/app-store.png",
+      "apple.png": "https://rmnzqinspzgmvgxistyi.supabase.co/storage/v1/object/public/portfolio-assets/icons/apple.png",
+      "brand-logo.png": "https://rmnzqinspzgmvgxistyi.supabase.co/storage/v1/object/public/portfolio-assets/icons/brand-logo.png",
+      "cicd.png": "https://rmnzqinspzgmvgxistyi.supabase.co/storage/v1/object/public/portfolio-assets/icons/cicd.png",
+      "clean-architecture.png": "https://rmnzqinspzgmvgxistyi.supabase.co/storage/v1/object/public/portfolio-assets/icons/clean-architecture.png",
+      "dart.png": "https://rmnzqinspzgmvgxistyi.supabase.co/storage/v1/object/public/portfolio-assets/icons/dart.png",
+      "firebase.png": "https://rmnzqinspzgmvgxistyi.supabase.co/storage/v1/object/public/portfolio-assets/icons/firebase.png",
+      "flutter.png": "https://rmnzqinspzgmvgxistyi.supabase.co/storage/v1/object/public/portfolio-assets/icons/flutter.png",
+      "performance.png": "https://rmnzqinspzgmvgxistyi.supabase.co/storage/v1/object/public/portfolio-assets/icons/performance.png",
+      "production-ready.png": "https://rmnzqinspzgmvgxistyi.supabase.co/storage/v1/object/public/portfolio-assets/icons/production-ready.png"
+    },
+    "lincsell": {
+      "banner.png": "https://rmnzqinspzgmvgxistyi.supabase.co/storage/v1/object/public/portfolio-assets/lincsell/banner.png",
+      "img1.png": "https://rmnzqinspzgmvgxistyi.supabase.co/storage/v1/object/public/portfolio-assets/lincsell/img1.png",
+      "img2.png": "https://rmnzqinspzgmvgxistyi.supabase.co/storage/v1/object/public/portfolio-assets/lincsell/img2.png"
+    },
+    "my-images": {
+      "backgrounds": {
+        "contact-cta.webp": "https://rmnzqinspzgmvgxistyi.supabase.co/storage/v1/object/public/portfolio-assets/my-images/backgrounds/contact-cta.webp"
+      },
+      "cv": {
+        "Muhammad Musa Mobile App Developer.pdf": "https://rmnzqinspzgmvgxistyi.supabase.co/storage/v1/object/public/portfolio-assets/my-images/cv/Muhammad%20Musa%20Mobile%20App%20Developer.pdf"
+      },
+      "portrait": {
+        "about-desktop.png": "https://rmnzqinspzgmvgxistyi.supabase.co/storage/v1/object/public/portfolio-assets/my-images/portrait/about-desktop.png",
+        "about-mobile.png": "https://rmnzqinspzgmvgxistyi.supabase.co/storage/v1/object/public/portfolio-assets/my-images/portrait/about-mobile.png",
+        "hero-desktop.png": "https://rmnzqinspzgmvgxistyi.supabase.co/storage/v1/object/public/portfolio-assets/my-images/portrait/hero-desktop.png",
+        "hero-mobile.png": "https://rmnzqinspzgmvgxistyi.supabase.co/storage/v1/object/public/portfolio-assets/my-images/portrait/hero-mobile.png"
+      }
+    },
+    "petadoptionapp": {
+      "banner.png": "https://rmnzqinspzgmvgxistyi.supabase.co/storage/v1/object/public/portfolio-assets/petadoptionapp/banner.png",
+      "imag1.png": "https://rmnzqinspzgmvgxistyi.supabase.co/storage/v1/object/public/portfolio-assets/petadoptionapp/imag1.png",
+      "img2.png": "https://rmnzqinspzgmvgxistyi.supabase.co/storage/v1/object/public/portfolio-assets/petadoptionapp/img2.png"
+    },
+    "plate_spot": {
+      "img1.png": "https://rmnzqinspzgmvgxistyi.supabase.co/storage/v1/object/public/portfolio-assets/plate_spot/img1.png",
+      "img2.png": "https://rmnzqinspzgmvgxistyi.supabase.co/storage/v1/object/public/portfolio-assets/plate_spot/img2.png",
+      "main_banner.png": "https://rmnzqinspzgmvgxistyi.supabase.co/storage/v1/object/public/portfolio-assets/plate_spot/main_banner.png"
+    },
+    "project-logos": {
+      "lincsell-logo.png": "https://rmnzqinspzgmvgxistyi.supabase.co/storage/v1/object/public/portfolio-assets/project-logos/lincsell-logo.png",
+      "petadopt-logo.png": "https://rmnzqinspzgmvgxistyi.supabase.co/storage/v1/object/public/portfolio-assets/project-logos/petadopt-logo.png",
+      "plate-spot-logo.png": "https://rmnzqinspzgmvgxistyi.supabase.co/storage/v1/object/public/portfolio-assets/project-logos/plate-spot-logo.png",
+      "qmusic-logo.png": "https://rmnzqinspzgmvgxistyi.supabase.co/storage/v1/object/public/portfolio-assets/project-logos/qmusic-logo.png",
+      "saasypos-logo.png": "https://rmnzqinspzgmvgxistyi.supabase.co/storage/v1/object/public/portfolio-assets/project-logos/saasypos-logo.png",
+      "shama-logo.png": "https://rmnzqinspzgmvgxistyi.supabase.co/storage/v1/object/public/portfolio-assets/project-logos/shama-logo.png"
+    },
+    "qmusic": {
+      "banner.png": "https://rmnzqinspzgmvgxistyi.supabase.co/storage/v1/object/public/portfolio-assets/qmusic/banner.png",
+      "img1.png": "https://rmnzqinspzgmvgxistyi.supabase.co/storage/v1/object/public/portfolio-assets/qmusic/img1.png",
+      "img2.png": "https://rmnzqinspzgmvgxistyi.supabase.co/storage/v1/object/public/portfolio-assets/qmusic/img2.png"
+    },
+    "saasypos": {
+      "banner.png": "https://rmnzqinspzgmvgxistyi.supabase.co/storage/v1/object/public/portfolio-assets/saasypos/banner.png",
+      "img1.png": "https://rmnzqinspzgmvgxistyi.supabase.co/storage/v1/object/public/portfolio-assets/saasypos/img1.png",
+      "img2.png": "https://rmnzqinspzgmvgxistyi.supabase.co/storage/v1/object/public/portfolio-assets/saasypos/img2.png"
+    },
+    "shama": {
+      "banner.png": "https://rmnzqinspzgmvgxistyi.supabase.co/storage/v1/object/public/portfolio-assets/shama/banner.png",
+      "img1.png": "https://rmnzqinspzgmvgxistyi.supabase.co/storage/v1/object/public/portfolio-assets/shama/img1.png",
+      "img2.png": "https://rmnzqinspzgmvgxistyi.supabase.co/storage/v1/object/public/portfolio-assets/shama/img2.png"
+    }
+  },
+  "files": [
+    {
+      "bucket": "portfolio-assets",
+      "path": "decorations/about-passionate-note.png",
+      "url": "https://rmnzqinspzgmvgxistyi.supabase.co/storage/v1/object/public/portfolio-assets/decorations/about-passionate-note.png",
+      "content_type": "image/png",
+      "filename": "about-passionate-note.png"
+    },
+    {
+      "bucket": "portfolio-assets",
+      "path": "decorations/hero-build-card.png",
+      "url": "https://rmnzqinspzgmvgxistyi.supabase.co/storage/v1/object/public/portfolio-assets/decorations/hero-build-card.png",
+      "content_type": "image/png",
+      "filename": "hero-build-card.png"
+    },
+    {
+      "bucket": "portfolio-assets",
+      "path": "decorations/hero-note-clean-code.png",
+      "url": "https://rmnzqinspzgmvgxistyi.supabase.co/storage/v1/object/public/portfolio-assets/decorations/hero-note-clean-code.png",
+      "content_type": "image/png",
+      "filename": "hero-note-clean-code.png"
+    },
+    {
+      "bucket": "portfolio-assets",
+      "path": "decorations/hero-note-ideas.png",
+      "url": "https://rmnzqinspzgmvgxistyi.supabase.co/storage/v1/object/public/portfolio-assets/decorations/hero-note-ideas.png",
+      "content_type": "image/png",
+      "filename": "hero-note-ideas.png"
+    },
+    {
+      "bucket": "portfolio-assets",
+      "path": "icons/ai-ml.png",
+      "url": "https://rmnzqinspzgmvgxistyi.supabase.co/storage/v1/object/public/portfolio-assets/icons/ai-ml.png",
+      "content_type": "image/png",
+      "filename": "ai-ml.png"
+    },
+    {
+      "bucket": "portfolio-assets",
+      "path": "icons/android.png",
+      "url": "https://rmnzqinspzgmvgxistyi.supabase.co/storage/v1/object/public/portfolio-assets/icons/android.png",
+      "content_type": "image/png",
+      "filename": "android.png"
+    },
+    {
+      "bucket": "portfolio-assets",
+      "path": "icons/app-store.png",
+      "url": "https://rmnzqinspzgmvgxistyi.supabase.co/storage/v1/object/public/portfolio-assets/icons/app-store.png",
+      "content_type": "image/png",
+      "filename": "app-store.png"
+    },
+    {
+      "bucket": "portfolio-assets",
+      "path": "icons/apple.png",
+      "url": "https://rmnzqinspzgmvgxistyi.supabase.co/storage/v1/object/public/portfolio-assets/icons/apple.png",
+      "content_type": "image/png",
+      "filename": "apple.png"
+    },
+    {
+      "bucket": "portfolio-assets",
+      "path": "icons/brand-logo.png",
+      "url": "https://rmnzqinspzgmvgxistyi.supabase.co/storage/v1/object/public/portfolio-assets/icons/brand-logo.png",
+      "content_type": "image/png",
+      "filename": "brand-logo.png"
+    },
+    {
+      "bucket": "portfolio-assets",
+      "path": "icons/cicd.png",
+      "url": "https://rmnzqinspzgmvgxistyi.supabase.co/storage/v1/object/public/portfolio-assets/icons/cicd.png",
+      "content_type": "image/png",
+      "filename": "cicd.png"
+    },
+    {
+      "bucket": "portfolio-assets",
+      "path": "icons/clean-architecture.png",
+      "url": "https://rmnzqinspzgmvgxistyi.supabase.co/storage/v1/object/public/portfolio-assets/icons/clean-architecture.png",
+      "content_type": "image/png",
+      "filename": "clean-architecture.png"
+    },
+    {
+      "bucket": "portfolio-assets",
+      "path": "icons/dart.png",
+      "url": "https://rmnzqinspzgmvgxistyi.supabase.co/storage/v1/object/public/portfolio-assets/icons/dart.png",
+      "content_type": "image/png",
+      "filename": "dart.png"
+    },
+    {
+      "bucket": "portfolio-assets",
+      "path": "icons/firebase.png",
+      "url": "https://rmnzqinspzgmvgxistyi.supabase.co/storage/v1/object/public/portfolio-assets/icons/firebase.png",
+      "content_type": "image/png",
+      "filename": "firebase.png"
+    },
+    {
+      "bucket": "portfolio-assets",
+      "path": "icons/flutter.png",
+      "url": "https://rmnzqinspzgmvgxistyi.supabase.co/storage/v1/object/public/portfolio-assets/icons/flutter.png",
+      "content_type": "image/png",
+      "filename": "flutter.png"
+    },
+    {
+      "bucket": "portfolio-assets",
+      "path": "icons/performance.png",
+      "url": "https://rmnzqinspzgmvgxistyi.supabase.co/storage/v1/object/public/portfolio-assets/icons/performance.png",
+      "content_type": "image/png",
+      "filename": "performance.png"
+    },
+    {
+      "bucket": "portfolio-assets",
+      "path": "icons/production-ready.png",
+      "url": "https://rmnzqinspzgmvgxistyi.supabase.co/storage/v1/object/public/portfolio-assets/icons/production-ready.png",
+      "content_type": "image/png",
+      "filename": "production-ready.png"
+    },
+    {
+      "bucket": "portfolio-assets",
+      "path": "lincsell/banner.png",
+      "url": "https://rmnzqinspzgmvgxistyi.supabase.co/storage/v1/object/public/portfolio-assets/lincsell/banner.png",
+      "content_type": "image/png",
+      "filename": "banner.png"
+    },
+    {
+      "bucket": "portfolio-assets",
+      "path": "lincsell/img1.png",
+      "url": "https://rmnzqinspzgmvgxistyi.supabase.co/storage/v1/object/public/portfolio-assets/lincsell/img1.png",
+      "content_type": "image/png",
+      "filename": "img1.png"
+    },
+    {
+      "bucket": "portfolio-assets",
+      "path": "lincsell/img2.png",
+      "url": "https://rmnzqinspzgmvgxistyi.supabase.co/storage/v1/object/public/portfolio-assets/lincsell/img2.png",
+      "content_type": "image/png",
+      "filename": "img2.png"
+    },
+    {
+      "bucket": "portfolio-assets",
+      "path": "my-images/backgrounds/contact-cta.webp",
+      "url": "https://rmnzqinspzgmvgxistyi.supabase.co/storage/v1/object/public/portfolio-assets/my-images/backgrounds/contact-cta.webp",
+      "content_type": "image/webp",
+      "filename": "contact-cta.webp"
+    },
+    {
+      "bucket": "portfolio-assets",
+      "path": "my-images/cv/Muhammad Musa Mobile App Developer.pdf",
+      "url": "https://rmnzqinspzgmvgxistyi.supabase.co/storage/v1/object/public/portfolio-assets/my-images/cv/Muhammad%20Musa%20Mobile%20App%20Developer.pdf",
+      "content_type": "application/pdf",
+      "filename": "Muhammad Musa Mobile App Developer.pdf"
+    },
+    {
+      "bucket": "portfolio-assets",
+      "path": "my-images/portrait/about-desktop.png",
+      "url": "https://rmnzqinspzgmvgxistyi.supabase.co/storage/v1/object/public/portfolio-assets/my-images/portrait/about-desktop.png",
+      "content_type": "image/png",
+      "filename": "about-desktop.png"
+    },
+    {
+      "bucket": "portfolio-assets",
+      "path": "my-images/portrait/about-mobile.png",
+      "url": "https://rmnzqinspzgmvgxistyi.supabase.co/storage/v1/object/public/portfolio-assets/my-images/portrait/about-mobile.png",
+      "content_type": "image/png",
+      "filename": "about-mobile.png"
+    },
+    {
+      "bucket": "portfolio-assets",
+      "path": "my-images/portrait/hero-desktop.png",
+      "url": "https://rmnzqinspzgmvgxistyi.supabase.co/storage/v1/object/public/portfolio-assets/my-images/portrait/hero-desktop.png",
+      "content_type": "image/png",
+      "filename": "hero-desktop.png"
+    },
+    {
+      "bucket": "portfolio-assets",
+      "path": "my-images/portrait/hero-mobile.png",
+      "url": "https://rmnzqinspzgmvgxistyi.supabase.co/storage/v1/object/public/portfolio-assets/my-images/portrait/hero-mobile.png",
+      "content_type": "image/png",
+      "filename": "hero-mobile.png"
+    },
+    {
+      "bucket": "portfolio-assets",
+      "path": "petadoptionapp/banner.png",
+      "url": "https://rmnzqinspzgmvgxistyi.supabase.co/storage/v1/object/public/portfolio-assets/petadoptionapp/banner.png",
+      "content_type": "image/png",
+      "filename": "banner.png"
+    },
+    {
+      "bucket": "portfolio-assets",
+      "path": "petadoptionapp/imag1.png",
+      "url": "https://rmnzqinspzgmvgxistyi.supabase.co/storage/v1/object/public/portfolio-assets/petadoptionapp/imag1.png",
+      "content_type": "image/png",
+      "filename": "imag1.png"
+    },
+    {
+      "bucket": "portfolio-assets",
+      "path": "petadoptionapp/img2.png",
+      "url": "https://rmnzqinspzgmvgxistyi.supabase.co/storage/v1/object/public/portfolio-assets/petadoptionapp/img2.png",
+      "content_type": "image/png",
+      "filename": "img2.png"
+    },
+    {
+      "bucket": "portfolio-assets",
+      "path": "plate_spot/img1.png",
+      "url": "https://rmnzqinspzgmvgxistyi.supabase.co/storage/v1/object/public/portfolio-assets/plate_spot/img1.png",
+      "content_type": "image/png",
+      "filename": "img1.png"
+    },
+    {
+      "bucket": "portfolio-assets",
+      "path": "plate_spot/img2.png",
+      "url": "https://rmnzqinspzgmvgxistyi.supabase.co/storage/v1/object/public/portfolio-assets/plate_spot/img2.png",
+      "content_type": "image/png",
+      "filename": "img2.png"
+    },
+    {
+      "bucket": "portfolio-assets",
+      "path": "plate_spot/main_banner.png",
+      "url": "https://rmnzqinspzgmvgxistyi.supabase.co/storage/v1/object/public/portfolio-assets/plate_spot/main_banner.png",
+      "content_type": "image/png",
+      "filename": "main_banner.png"
+    },
+    {
+      "bucket": "portfolio-assets",
+      "path": "project-logos/lincsell-logo.png",
+      "url": "https://rmnzqinspzgmvgxistyi.supabase.co/storage/v1/object/public/portfolio-assets/project-logos/lincsell-logo.png",
+      "content_type": "image/png",
+      "filename": "lincsell-logo.png"
+    },
+    {
+      "bucket": "portfolio-assets",
+      "path": "project-logos/petadopt-logo.png",
+      "url": "https://rmnzqinspzgmvgxistyi.supabase.co/storage/v1/object/public/portfolio-assets/project-logos/petadopt-logo.png",
+      "content_type": "image/png",
+      "filename": "petadopt-logo.png"
+    },
+    {
+      "bucket": "portfolio-assets",
+      "path": "project-logos/plate-spot-logo.png",
+      "url": "https://rmnzqinspzgmvgxistyi.supabase.co/storage/v1/object/public/portfolio-assets/project-logos/plate-spot-logo.png",
+      "content_type": "image/png",
+      "filename": "plate-spot-logo.png"
+    },
+    {
+      "bucket": "portfolio-assets",
+      "path": "project-logos/qmusic-logo.png",
+      "url": "https://rmnzqinspzgmvgxistyi.supabase.co/storage/v1/object/public/portfolio-assets/project-logos/qmusic-logo.png",
+      "content_type": "image/png",
+      "filename": "qmusic-logo.png"
+    },
+    {
+      "bucket": "portfolio-assets",
+      "path": "project-logos/saasypos-logo.png",
+      "url": "https://rmnzqinspzgmvgxistyi.supabase.co/storage/v1/object/public/portfolio-assets/project-logos/saasypos-logo.png",
+      "content_type": "image/png",
+      "filename": "saasypos-logo.png"
+    },
+    {
+      "bucket": "portfolio-assets",
+      "path": "project-logos/shama-logo.png",
+      "url": "https://rmnzqinspzgmvgxistyi.supabase.co/storage/v1/object/public/portfolio-assets/project-logos/shama-logo.png",
+      "content_type": "image/png",
+      "filename": "shama-logo.png"
+    },
+    {
+      "bucket": "portfolio-assets",
+      "path": "qmusic/banner.png",
+      "url": "https://rmnzqinspzgmvgxistyi.supabase.co/storage/v1/object/public/portfolio-assets/qmusic/banner.png",
+      "content_type": "image/png",
+      "filename": "banner.png"
+    },
+    {
+      "bucket": "portfolio-assets",
+      "path": "qmusic/img1.png",
+      "url": "https://rmnzqinspzgmvgxistyi.supabase.co/storage/v1/object/public/portfolio-assets/qmusic/img1.png",
+      "content_type": "image/png",
+      "filename": "img1.png"
+    },
+    {
+      "bucket": "portfolio-assets",
+      "path": "qmusic/img2.png",
+      "url": "https://rmnzqinspzgmvgxistyi.supabase.co/storage/v1/object/public/portfolio-assets/qmusic/img2.png",
+      "content_type": "image/png",
+      "filename": "img2.png"
+    },
+    {
+      "bucket": "portfolio-assets",
+      "path": "saasypos/banner.png",
+      "url": "https://rmnzqinspzgmvgxistyi.supabase.co/storage/v1/object/public/portfolio-assets/saasypos/banner.png",
+      "content_type": "image/png",
+      "filename": "banner.png"
+    },
+    {
+      "bucket": "portfolio-assets",
+      "path": "saasypos/img1.png",
+      "url": "https://rmnzqinspzgmvgxistyi.supabase.co/storage/v1/object/public/portfolio-assets/saasypos/img1.png",
+      "content_type": "image/png",
+      "filename": "img1.png"
+    },
+    {
+      "bucket": "portfolio-assets",
+      "path": "saasypos/img2.png",
+      "url": "https://rmnzqinspzgmvgxistyi.supabase.co/storage/v1/object/public/portfolio-assets/saasypos/img2.png",
+      "content_type": "image/png",
+      "filename": "img2.png"
+    },
+    {
+      "bucket": "portfolio-assets",
+      "path": "shama/banner.png",
+      "url": "https://rmnzqinspzgmvgxistyi.supabase.co/storage/v1/object/public/portfolio-assets/shama/banner.png",
+      "content_type": "image/png",
+      "filename": "banner.png"
+    },
+    {
+      "bucket": "portfolio-assets",
+      "path": "shama/img1.png",
+      "url": "https://rmnzqinspzgmvgxistyi.supabase.co/storage/v1/object/public/portfolio-assets/shama/img1.png",
+      "content_type": "image/png",
+      "filename": "img1.png"
+    },
+    {
+      "bucket": "portfolio-assets",
+      "path": "shama/img2.png",
+      "url": "https://rmnzqinspzgmvgxistyi.supabase.co/storage/v1/object/public/portfolio-assets/shama/img2.png",
+      "content_type": "image/png",
+      "filename": "img2.png"
+    }
+  ],
+  "uploaded": 46,
+  "failed": 0
+}

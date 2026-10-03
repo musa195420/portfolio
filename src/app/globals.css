@@ -1,0 +1,153 @@
+@import 'tailwindcss';
+
+/* ----------------------------------------------------------------------------
+ * Design tokens — warm cream canvas, burnt orange / brown accent.
+ * Exposed to Tailwind via @theme so utilities like `bg-cream`, `text-accent`,
+ * `shadow-card` and `rounded-card` are available everywhere.
+ * ------------------------------------------------------------------------- */
+@theme {
+  --color-cream: #fcf8f2;
+  --color-cream-deep: #f7efe4;
+  --color-surface: #ffffff;
+  --color-surface-soft: #fff7ec;
+  --color-ink: #111111;
+  --color-ink-soft: #2b2622;
+  --color-ink-muted: #5b554f;
+  --color-ink-faint: #6e665e;
+  --color-accent: #9a491d;
+  --color-accent-strong: #7a3612;
+  --color-accent-light: #c96b31;
+  --color-accent-soft: #f6e0cf;
+  --color-accent-wash: #fbeee2;
+  --color-espresso: #3d1c0a;
+  --color-umber: #5a2a10;
+  --color-line: #eee5db;
+  --color-line-strong: #e2d5c6;
+  --color-success: #2f7a4b;
+  --color-danger: #b42318;
+
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+  --font-display: var(--font-poppins), var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+  --font-hand: var(--font-caveat), 'Segoe Print', cursive;
+
+  --text-hero: clamp(2.35rem, 3.6vw + 1rem, 4.25rem);
+  --text-hero--line-height: 1.02;
+  --text-hero--letter-spacing: -0.035em;
+  --text-section: clamp(1.75rem, 2.2vw + 0.9rem, 2.4rem);
+  --text-section--line-height: 1.15;
+  --text-section--letter-spacing: -0.02em;
+
+  --radius-card: 1.25rem;
+  --radius-panel: 1.75rem;
+
+  --shadow-soft: 0 1px 2px rgb(74 43 20 / 0.04), 0 6px 18px -10px rgb(74 43 20 / 0.12);
+  --shadow-card: 0 1px 2px rgb(74 43 20 / 0.05), 0 14px 32px -18px rgb(74 43 20 / 0.22);
+  --shadow-lift: 0 2px 4px rgb(74 43 20 / 0.06), 0 22px 44px -20px rgb(74 43 20 / 0.32);
+  --shadow-button: 0 10px 24px -12px rgb(122 54 18 / 0.65);
+
+  --breakpoint-xs: 30rem;
+
+  --animate-shimmer: shimmer 1.6s ease-in-out infinite;
+
+  @keyframes shimmer {
+    0% {
+      background-position: -200% 0;
+    }
+    100% {
+      background-position: 200% 0;
+    }
+  }
+}
+
+@layer base {
+  :root {
+    color-scheme: light;
+  }
+
+  html {
+    -webkit-text-size-adjust: 100%;
+    text-rendering: optimizeLegibility;
+  }
+
+  @media (prefers-reduced-motion: no-preference) {
+    html {
+      scroll-behavior: smooth;
+    }
+  }
+
+  body {
+    background-color: var(--color-cream);
+    color: var(--color-ink);
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    font-family: var(--font-display);
+    color: var(--color-ink);
+    text-wrap: balance;
+  }
+
+  p {
+    text-wrap: pretty;
+  }
+
+  ::selection {
+    background-color: var(--color-accent-soft);
+    color: var(--color-accent-strong);
+  }
+
+  :focus-visible {
+    outline: 2px solid var(--color-accent);
+    outline-offset: 3px;
+    border-radius: 0.5rem;
+  }
+
+  [id] {
+    scroll-margin-top: 6rem;
+  }
+}
+
+@layer components {
+  /* YouTube-style shimmer placeholder. */
+  .skeleton {
+    background-color: var(--color-cream-deep);
+    background-image: linear-gradient(
+      90deg,
+      transparent 0%,
+      rgb(255 255 255 / 0.65) 50%,
+      transparent 100%
+    );
+    background-size: 200% 100%;
+    animation: var(--animate-shimmer);
+  }
+
+  /* Soft cream/orange abstract shapes behind the hero, drawn with CSS. */
+  .hero-backdrop {
+    background:
+      radial-gradient(60% 55% at 78% 38%, rgb(246 224 207 / 0.95) 0%, rgb(246 224 207 / 0) 70%),
+      radial-gradient(40% 40% at 8% 12%, rgb(251 238 226 / 0.9) 0%, rgb(251 238 226 / 0) 70%);
+  }
+
+  .scrollbar-none {
+    scrollbar-width: none;
+  }
+
+  .scrollbar-none::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
