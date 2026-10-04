@@ -5,13 +5,13 @@ import { SectionHeading } from '@/components/ui/SectionHeading';
 import { AppRoutes, SectionIds } from '@/constants/app_routes';
 import { AppStrings } from '@/constants/app_strings';
 import { getFeaturedProjects } from '@/services/project.service';
-import { ProjectGrid, ProjectGridSkeleton } from './ProjectGrid';
+import { ProjectGrid } from './ProjectGrid';
 
 function FeaturedProjectsShell({ children }: { children: React.ReactNode }) {
   return (
-    <section id={SectionIds.projects} aria-labelledby="projects-heading" className="py-6 sm:py-10">
-      <Container>
-        <div className="mb-6 flex flex-wrap items-end justify-between gap-4 sm:mb-8">
+    <section id={SectionIds.projects} aria-labelledby="projects-heading" className="pt-5 pb-3 sm:pt-6">
+      <Container size="wide">
+        <div className="mb-4 flex flex-wrap items-end justify-between gap-4 sm:mb-5">
           <SectionHeading
             id="projects-heading"
             bar
@@ -38,14 +38,6 @@ export async function FeaturedProjects() {
   return (
     <FeaturedProjectsShell>
       <ProjectGrid projects={data} error={error} />
-    </FeaturedProjectsShell>
-  );
-}
-
-export function FeaturedProjectsSkeleton() {
-  return (
-    <FeaturedProjectsShell>
-      <ProjectGridSkeleton />
     </FeaturedProjectsShell>
   );
 }

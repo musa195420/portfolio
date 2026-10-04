@@ -97,6 +97,7 @@ export const AppStrings = {
     headingAccent: 'Built & Shipped',
     present: 'Present',
     toolbox: 'Toolbox',
+    highlights: 'Key contributions',
     empty: 'Experience details will be published soon.',
   },
   cta: {
@@ -195,7 +196,6 @@ export const AppStrings = {
     builtWith: 'Built with Next.js & Supabase',
   },
   states: {
-    loading: 'Loading…',
     errorTitle: 'Something went wrong',
     errorBody: 'This content could not be loaded right now. Please try again in a moment.',
     retry: 'Try again',

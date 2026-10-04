@@ -1,5 +1,5 @@
 import { Cog } from 'lucide-react';
-import Image from 'next/image';
+import { SmartImage } from '@/components/ui/SmartImage';
 import { ImageSizes } from '@/constants/app_constants';
 import type { Technology } from '@/types/skill';
 import { cn } from '@/utils/cn';
@@ -21,16 +21,18 @@ export function TechIcon({ technology, className, fallback = 'glyph' }: TechIcon
         </span>
       );
     }
-    return <Cog aria-hidden="true" className={cn('text-accent-light', className)} strokeWidth={2.25} />;
+    return <Cog aria-hidden="true" className={cn('text-cobalt', className)} strokeWidth={2.25} />;
   }
   return (
-    <Image
+    <SmartImage
       src={technology.iconUrl}
       alt=""
-      width={48}
-      height={48}
+      width={1254}
+      height={1254}
       sizes={ImageSizes.icon}
-      className={cn('object-contain', className)}
+      preview={false}
+      className={cn('rounded-md', className)}
+      imgClassName="object-contain"
     />
   );
 }

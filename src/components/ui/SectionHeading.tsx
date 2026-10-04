@@ -13,7 +13,7 @@ type SectionHeadingProps = {
   bar?: boolean;
 };
 
-export function Eyebrow({ children, className }: { children: string; className?: string }) {
+export function Eyebrow({ children, className, marker }: { children: string; className?: string; marker?: boolean }) {
   return (
     <p
       className={cn(
@@ -21,6 +21,7 @@ export function Eyebrow({ children, className }: { children: string; className?:
         className,
       )}
     >
+      {marker ? <span aria-hidden="true" className="size-1.5 rotate-45 rounded-[1px] bg-accent-light" /> : null}
       {children}
     </p>
   );
@@ -37,7 +38,7 @@ export function SectionHeading({
   bar,
 }: SectionHeadingProps) {
   return (
-    <div className={cn(bar && 'border-l-[3px] border-accent pl-4', className)}>
+    <div className={cn(bar && 'border-l-[3px] border-accent pl-4 sm:ml-4', className)}>
       {eyebrow ? <Eyebrow className="mb-2">{eyebrow}</Eyebrow> : null}
       <Heading id={id} className="text-section font-bold">
         {lead}

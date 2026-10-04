@@ -51,6 +51,9 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
   return (
     <html lang="en" className={`${inter.variable} ${poppins.variable} ${caveat.variable}`}>
       <body className="flex min-h-dvh flex-col">
+        <noscript>
+          <style>{'.img-fade{opacity:1!important}'}</style>
+        </noscript>
         <a
           href="#main-content"
           className="sr-only z-[60] rounded-xl bg-accent px-4 py-2 text-white focus:not-sr-only focus:fixed focus:top-3 focus:left-3"

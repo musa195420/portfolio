@@ -9,8 +9,9 @@ import { TechStrip } from '@/components/skills/TechStrip';
 export const revalidate = 300;
 
 /**
- * Content is served from the ISR cache, so sections render together; the
- * route-level loading.tsx shows shimmers while a cold render is in flight.
+ * Content is served from the ISR cache, so the full page HTML is sent at once
+ * (no route-level loading.tsx, which would ship a skeleton first). Remote
+ * images show their own shimmer placeholders while they load.
  */
 export default function HomePage() {
   return (

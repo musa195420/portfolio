@@ -14,8 +14,3 @@ export type Skill = {
   proficiency: number | null;
   featured: boolean;
 };
-
-export type SkillGroup = {
-  category: string;
-  skills: Skill[];
-};

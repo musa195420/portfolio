@@ -2,7 +2,7 @@
 
 import { ChevronLeft, ChevronRight, Expand, X } from 'lucide-react';
 import { useEffect, useRef, useState } from 'react';
-import { RemoteImage } from '@/components/ui/RemoteImage';
+import { SmartImage } from '@/components/ui/SmartImage';
 import { ImageSizes } from '@/constants/app_constants';
 import { AppStrings } from '@/constants/app_strings';
 import type { ProjectMedia } from '@/types/project';
@@ -34,14 +34,14 @@ export function ProjectGallery({ media }: { media: ProjectMedia[] }) {
               aria-label={AppStrings.a11y.openImage(itemIndex + 1)}
               className="group relative block w-full overflow-hidden rounded-card border border-line bg-cream-deep shadow-card"
             >
-              <RemoteImage
+              <SmartImage
                 src={item.url}
                 alt={item.alt}
                 width={item.width ?? 1536}
                 height={item.height ?? 1024}
                 sizes={ImageSizes.gallery}
-                className="h-auto w-full transition duration-500 group-hover:scale-[1.02]"
-                fallbackClassName="aspect-[3/2] w-full"
+                className="w-full"
+                imgClassName="object-cover transition duration-500 group-hover:scale-[1.02]"
               />
               <span className="absolute right-3 bottom-3 flex size-9 items-center justify-center rounded-full bg-surface/90 text-ink opacity-0 shadow-card transition group-hover:opacity-100 group-focus-visible:opacity-100">
                 <Expand aria-hidden="true" className="size-4" />
@@ -66,14 +66,16 @@ export function ProjectGallery({ media }: { media: ProjectMedia[] }) {
       >
         {current ? (
           <div className="relative">
-            <RemoteImage
+            <SmartImage
+              key={current.id}
               src={current.url}
               alt={current.alt}
               width={current.width ?? 1536}
               height={current.height ?? 1024}
               sizes="92vw"
               quality={85}
-              className="max-h-[86dvh] w-full rounded-card object-contain"
+              className="max-h-[86dvh] w-full rounded-card bg-ink/40"
+              imgClassName="object-contain"
             />
             <p className="mt-3 text-center text-sm text-white/85">
               {current.alt} · {(index ?? 0) + 1} / {media.length}

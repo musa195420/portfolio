@@ -1,7 +1,7 @@
 import { ArrowLeft } from 'lucide-react';
 import Link from 'next/link';
-import { RemoteImage } from '@/components/ui/RemoteImage';
 import { Container } from '@/components/ui/Container';
+import { SmartImage } from '@/components/ui/SmartImage';
 import { ImageSizes } from '@/constants/app_constants';
 import { AppRoutes } from '@/constants/app_routes';
 import { AppStrings } from '@/constants/app_strings';
@@ -28,16 +28,15 @@ export function ProjectHero({ project }: { project: ProjectDetail }) {
           </Link>
 
           <div className="flex items-center gap-4">
-            <span className="relative size-16 shrink-0 overflow-hidden rounded-2xl border border-line bg-surface shadow-card sm:size-20">
-              <RemoteImage
-                src={project.logoUrl}
-                alt={AppStrings.a11y.projectLogo(project.name)}
-                fill
-                sizes={ImageSizes.logo}
-                priority
-                className="object-cover"
-              />
-            </span>
+            <SmartImage
+              src={project.logoUrl}
+              alt={AppStrings.a11y.projectLogo(project.name)}
+              width={1254}
+              height={1254}
+              sizes="96px"
+              preload
+              className="size-16 shrink-0 rounded-2xl border border-line bg-surface shadow-card sm:size-20"
+            />
             <div>
               {project.projectType ? (
                 <p className="text-xs font-semibold tracking-[0.14em] text-accent uppercase">{project.projectType}</p>
@@ -66,18 +65,15 @@ export function ProjectHero({ project }: { project: ProjectDetail }) {
           <ProjectLinks project={project} />
         </div>
 
-        <div className="relative overflow-hidden rounded-panel border border-line bg-cream-deep shadow-lift">
-          <RemoteImage
-            src={bannerUrl}
-            alt={banner?.alt ?? project.name}
-            width={width}
-            height={height}
-            sizes={ImageSizes.detailBanner}
-            priority
-            className="h-auto w-full"
-            fallbackClassName="aspect-[3/2] w-full"
-          />
-        </div>
+        <SmartImage
+          src={bannerUrl}
+          alt={banner?.alt ?? project.name}
+          width={width}
+          height={height}
+          sizes={ImageSizes.detailBanner}
+          preload
+          className="w-full rounded-panel border border-line bg-cream-deep shadow-lift"
+        />
       </Container>
     </section>
   );

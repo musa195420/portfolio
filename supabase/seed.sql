@@ -34,7 +34,7 @@ with src (
   'Developer',
   'I build scalable Flutter apps, Firebase integrations, REST API based applications, POS systems, AI/ML powered features, and polished iOS & Android experiences that make an impact.',
   'Building Ideas into' || chr(10) || 'Powerful Mobile Experiences',
-  'I''m Muhammad Musa, a Mobile Application Developer with 5+ years of experience building high-quality, scalable and user-friendly mobile apps. I specialize in Flutter development with strong expertise in Firebase, REST APIs, POS systems and AI/ML integrations. My focus is always on clean architecture, performance and creating real value for users.' || chr(10) || chr(10) || 'I have delivered mobile apps for 20+ clients across fintech, POS, marketplace, education and food delivery, handling everything from architecture and responsive UI to CI/CD, testing and App Store & Play Store releases.',
+  'I''m Muhammad Musa, a Mobile Application Developer with 5+ years of experience building high-quality, scalable and user-friendly mobile apps. I specialize in Flutter development with strong expertise in Firebase, REST APIs, POS systems and AI/ML integrations. My focus is always on clean architecture, performance and creating real value for users.',
   'musa195420@gmail.com',
   '+92 321 8838748',
   'Lahore, Pakistan',
