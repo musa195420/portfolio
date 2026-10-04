@@ -20,13 +20,13 @@ BUCKET_NAME = "portfolio-assets"
 
 load_dotenv(ENV_FILE)
 
-SUPABASE_URL = os.getenv("NEXT_PUBLIC_SUPABASE_URL")
+SUPABASE_URL = os.getenv("NEXT_SUPABASE_URL")
 SUPABASE_SECRET_KEY = os.getenv("SUPABASE_SECRET_KEY")
 
 
 if not SUPABASE_URL:
     raise RuntimeError(
-        f"NEXT_PUBLIC_SUPABASE_URL is missing from {ENV_FILE}"
+        f"NEXT_SUPABASE_URL is missing from {ENV_FILE}"
     )
 
 if not SUPABASE_SECRET_KEY:

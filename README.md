@@ -36,8 +36,8 @@ Images were uploaded to the `portfolio-assets` bucket with `upload_to_supabase.p
 
 | Variable                        | Where used                      |
 | ------------------------------- | ------------------------------- |
-| `NEXT_PUBLIC_SUPABASE_URL`      | Server reads, image config      |
-| `NEXT_PUBLIC_SUPABASE_ANON_KEY` | Server reads + inquiry insert (RLS enforced) |
+| `NEXT_SUPABASE_URL`      | Server reads, image config      |
+| `NEXT_SUPABASE_ANON_KEY` | Server reads + inquiry insert (RLS enforced) |
 | `SUPABASE_SECRET_KEY`           | **Server only** — inquiry rate limiting and IP hashing (`server-only` guarded) |
 | `NEXT_PUBLIC_SITE_URL`          | Optional canonical URL for metadata/sitemap |
 

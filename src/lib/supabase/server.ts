@@ -16,7 +16,7 @@ let publicClient: PublicSupabaseClient | null = null;
 export function getPublicSupabase(): PublicSupabaseClient {
   if (publicClient) return publicClient;
   const env = getPublicEnv();
-  publicClient = createClient<Database>(env.NEXT_PUBLIC_SUPABASE_URL, env.NEXT_PUBLIC_SUPABASE_ANON_KEY, {
+  publicClient = createClient<Database>(env.NEXT_SUPABASE_URL, env.NEXT_SUPABASE_ANON_KEY, {
     auth: { persistSession: false, autoRefreshToken: false, detectSessionInUrl: false },
     global: {
       fetch: (input, init) =>
@@ -35,7 +35,7 @@ export function getPublicSupabase(): PublicSupabaseClient {
  */
 export function getAnonWriteSupabase(): PublicSupabaseClient {
   const env = getPublicEnv();
-  return createClient<Database>(env.NEXT_PUBLIC_SUPABASE_URL, env.NEXT_PUBLIC_SUPABASE_ANON_KEY, {
+  return createClient<Database>(env.NEXT_SUPABASE_URL, env.NEXT_SUPABASE_ANON_KEY, {
     auth: { persistSession: false, autoRefreshToken: false, detectSessionInUrl: false },
     global: { fetch: (input, init) => fetch(input, { ...init, cache: 'no-store' }) },
   });

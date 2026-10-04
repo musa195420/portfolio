@@ -24,7 +24,7 @@ Do **not** redesign the concept into something else. Do **not** simplify the pag
 12. Put all Supabase asset URL keys / asset mapping helpers in dedicated asset constants/helper files.
 13. No raw strings repeated throughout components.
 14. No Supabase secret key in client components.
-15. Use `NEXT_PUBLIC_SUPABASE_URL` and `NEXT_PUBLIC_SUPABASE_ANON_KEY` on the client only where needed.
+15. Use `NEXT_SUPABASE_URL` and `NEXT_SUPABASE_ANON_KEY` on the client only where needed.
 16. Use `SUPABASE_SECRET_KEY` server-side only.
 17. Every project must have its own project detail page.
 18. Add a service/contact form where visitors can submit their project idea.
@@ -40,8 +40,8 @@ Do **not** redesign the concept into something else. Do **not** simplify the pag
 Use the existing environment variables:
 
 ```env
-NEXT_PUBLIC_SUPABASE_URL=
-NEXT_PUBLIC_SUPABASE_ANON_KEY=
+NEXT_SUPABASE_URL=
+NEXT_SUPABASE_ANON_KEY=
 SUPABASE_SECRET_KEY=
 ```
 

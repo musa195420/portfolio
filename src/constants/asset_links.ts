@@ -17,20 +17,20 @@ export const AssetPaths = {
 export type AssetPath = (typeof AssetPaths)[keyof typeof AssetPaths];
 
 function supabaseProjectUrl(): URL {
-  const value = process.env.NEXT_PUBLIC_SUPABASE_URL;
+  const value = process.env.NEXT_SUPABASE_URL;
   if (!value) {
     throw new Error(
-      'NEXT_PUBLIC_SUPABASE_URL is required to build Supabase Storage asset URLs.',
+      'NEXT_SUPABASE_URL is required to build Supabase Storage asset URLs.',
     );
   }
 
   const url = new URL(value);
   if (url.protocol !== 'https:' && url.protocol !== 'http:') {
-    throw new Error('NEXT_PUBLIC_SUPABASE_URL must use http or https.');
+    throw new Error('NEXT_SUPABASE_URL must use http or https.');
   }
   const isLocal = url.hostname === 'localhost' || url.hostname === '127.0.0.1';
   if (!isLocal && !url.hostname.endsWith('.supabase.co')) {
-    throw new Error('NEXT_PUBLIC_SUPABASE_URL must point to a Supabase project.');
+    throw new Error('NEXT_SUPABASE_URL must point to a Supabase project.');
   }
 
   return url;
