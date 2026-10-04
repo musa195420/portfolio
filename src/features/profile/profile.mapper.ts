@@ -1,3 +1,4 @@
+import { normalizeStoragePublicUrl } from '@/constants/asset_links';
 import { SiteSettingKeys } from '@/constants/supabase_tables';
 import type {
   ServiceFeatureRow,
@@ -25,18 +26,23 @@ export function mapProfile(row: SiteProfileRow): Profile {
     usersReached: row.users_reached,
     githubUrl: row.github_url,
     linkedinUrl: row.linkedin_url,
-    resumeUrl: row.resume_url,
-    heroDesktopImageUrl: row.hero_desktop_image_url,
-    heroMobileImageUrl: row.hero_mobile_image_url,
-    aboutDesktopImageUrl: row.about_desktop_image_url,
-    aboutMobileImageUrl: row.about_mobile_image_url,
+    resumeUrl: normalizeStoragePublicUrl(row.resume_url),
+    heroDesktopImageUrl: normalizeStoragePublicUrl(row.hero_desktop_image_url),
+    heroMobileImageUrl: normalizeStoragePublicUrl(row.hero_mobile_image_url),
+    aboutDesktopImageUrl: normalizeStoragePublicUrl(row.about_desktop_image_url),
+    aboutMobileImageUrl: normalizeStoragePublicUrl(row.about_mobile_image_url),
   };
 }
 
 export function mapServiceFeature(
   row: Pick<ServiceFeatureRow, 'id' | 'title' | 'description' | 'icon_url'>,
 ): ServiceFeature {
-  return { id: row.id, title: row.title, description: row.description, iconUrl: row.icon_url };
+  return {
+    id: row.id,
+    title: row.title,
+    description: row.description,
+    iconUrl: normalizeStoragePublicUrl(row.icon_url),
+  };
 }
 
 export function mapSocialLink(row: Pick<SocialLinkRow, 'id' | 'platform' | 'url' | 'icon_key'>): SocialLink {

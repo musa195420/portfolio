@@ -1,10 +1,29 @@
 import type { NextConfig } from 'next';
 
-const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL ? new URL(process.env.NEXT_PUBLIC_SUPABASE_URL) : null;
-const supabaseHost = supabaseUrl?.hostname ?? '*.supabase.co';
-const supabaseProtocol = supabaseUrl?.protocol === 'http:' ? 'http' : 'https';
-// A local Supabase stack (`supabase start`) serves storage from 127.0.0.1.
+const requiredEnvironmentVariables = [
+  'NEXT_PUBLIC_SUPABASE_URL',
+  'NEXT_PUBLIC_SUPABASE_ANON_KEY',
+  'SUPABASE_SECRET_KEY',
+] as const;
+
+const missingEnvironmentVariables = requiredEnvironmentVariables.filter((name) => !process.env[name]?.trim());
+if (missingEnvironmentVariables.length > 0) {
+  throw new Error(`Missing required environment variables: ${missingEnvironmentVariables.join(', ')}`);
+}
+
+const supabaseUrl = new URL(process.env.NEXT_PUBLIC_SUPABASE_URL!);
+if (supabaseUrl.protocol !== 'https:' && supabaseUrl.protocol !== 'http:') {
+  throw new Error('NEXT_PUBLIC_SUPABASE_URL must use http or https.');
+}
+
+const supabaseHost = supabaseUrl.hostname;
 const isLocalSupabase = supabaseHost === '127.0.0.1' || supabaseHost === 'localhost';
+if (!isLocalSupabase && !supabaseHost.endsWith('.supabase.co')) {
+  throw new Error('NEXT_PUBLIC_SUPABASE_URL must point to a Supabase project.');
+}
+
+const supabaseProtocol = supabaseUrl.protocol === 'http:' ? 'http' : 'https';
+// A local Supabase stack (`supabase start`) serves storage from 127.0.0.1.
 
 const nextConfig: NextConfig = {
   poweredByHeader: false,
@@ -15,7 +34,7 @@ const nextConfig: NextConfig = {
       {
         protocol: supabaseProtocol,
         hostname: supabaseHost,
-        port: supabaseUrl?.port || undefined,
+        port: supabaseUrl.port || undefined,
         pathname: '/storage/v1/object/public/**',
       },
     ],

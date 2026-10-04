@@ -1,10 +1,17 @@
+import { normalizeStoragePublicUrl } from '@/constants/asset_links';
 import type { SkillRow, TechnologyRow } from '@/types/database';
 import type { Skill, Technology } from '@/types/skill';
 
 export function mapTechnology(
   row: Pick<TechnologyRow, 'id' | 'name' | 'slug' | 'icon_url' | 'category'>,
 ): Technology {
-  return { id: row.id, name: row.name, slug: row.slug, iconUrl: row.icon_url, category: row.category };
+  return {
+    id: row.id,
+    name: row.name,
+    slug: row.slug,
+    iconUrl: normalizeStoragePublicUrl(row.icon_url),
+    category: row.category,
+  };
 }
 
 export function mapSkill(
@@ -14,7 +21,7 @@ export function mapSkill(
     id: row.id,
     name: row.name,
     category: row.category,
-    iconUrl: row.icon_url,
+    iconUrl: normalizeStoragePublicUrl(row.icon_url),
     proficiency: row.proficiency,
     featured: row.featured,
   };

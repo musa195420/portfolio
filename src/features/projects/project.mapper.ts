@@ -1,3 +1,4 @@
+import { normalizeStoragePublicUrl } from '@/constants/asset_links';
 import type { ProjectDetailRecord, ProjectSummaryRecord } from '@/repositories/project.repository';
 import { mapTechnology } from '@/features/skills/skill.mapper';
 import type { ProjectDetail, ProjectSummary } from '@/types/project';
@@ -20,8 +21,8 @@ export function mapProjectSummary(row: ProjectSummaryRecord): ProjectSummary {
     projectType: row.project_type,
     status: row.status,
     featured: row.featured,
-    logoUrl: row.logo_url,
-    bannerUrl: row.banner_url,
+    logoUrl: normalizeStoragePublicUrl(row.logo_url),
+    bannerUrl: normalizeStoragePublicUrl(row.banner_url),
     technologies: mapProjectTechnologies(row.project_technologies),
   };
 }
@@ -42,7 +43,7 @@ export function mapProjectDetail(row: ProjectDetailRecord): ProjectDetail {
     media: [...(row.project_media ?? [])].sort(bySortOrder).map((media) => ({
       id: media.id,
       mediaType: media.media_type,
-      url: media.public_url,
+      url: normalizeStoragePublicUrl(media.public_url)!,
       alt: media.alt_text ?? row.name,
       width: media.width,
       height: media.height,
